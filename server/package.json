@@ -1,0 +1,26 @@
+{
+  "name": "parkwise-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ParkWise REST API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test --test-concurrency=1",
+    "seed": "node utils/seed.js",
+    "photos": "node utils/fetchPlacePhotos.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "bcrypt": "6.0.0",
+    "cors": "2.8.6",
+    "dotenv": "18.0.5",
+    "express": "5.2.1",
+    "google-auth-library": "^11.2.0",
+    "jsonwebtoken": "9.0.3",
+    "mongoose": "9.10.4"
+  }
+}
